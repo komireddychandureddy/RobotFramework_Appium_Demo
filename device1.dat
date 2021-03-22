@@ -1,0 +1,3 @@
+--variable ANDROID_DEVICE_NAME:emulator-5554
+--variable ANDROID_PLATFORM_VERSION:10
+--variable APPIUM_SERVER_PORT:4723
