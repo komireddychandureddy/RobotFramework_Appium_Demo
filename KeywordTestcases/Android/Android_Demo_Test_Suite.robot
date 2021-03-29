@@ -1,9 +1,9 @@
 *** Settings ***
 Test Teardown     Close Application
-Resource          ../../../Config/super.robot
+Resource          ../../Config/super.robot
 
 *** Test Cases ***
-TC_01 Register a new user 
+TC_01 Register a new user
     [Setup]    mobile_common.Read TestData From Excel    TC_01
     Comment    Launch android mobile Application
     Launch Mobile Application    Android    ${REMOTE_MOBILE_EXECUTION}
@@ -18,7 +18,7 @@ TC_02 Validate user is able to place an order with Paypal
     Login to Mobile Application    ${WESHOP_EMAIL}    ${WESHOP_PASSWORD}
     Comment    Place an order
     Place an Order    ${test_prerequisite_data}[Category]
-    Comment     Fill up the payment details
-    Enter Payment Details   ${test_prerequisite_data}
-    Comment     Validate success message for validating the order   
+    Comment    Fill up the payment details
+    Enter Payment Details    ${test_prerequisite_data}
+    Comment    Validate success message for validating the order
     Validate Order is Placed
