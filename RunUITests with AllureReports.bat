@@ -9,4 +9,4 @@ echo %timestamp%
 @echo "#######################################"
 @echo "# Executing Demo UI Testcases #"
 @echo "#######################################"
-robot --listener allure_robotframework --logtitle Demo_UI_Regression_Report --reporttitle Demo_UI_Regression_Report --outputdir %source%\Results\UI_Reports KeywordTestcases\Android\Android_Demo_Test_Suite.robot.robot 
+robot --listener allure_robotframework --logtitle Demo_UI_Regression_Report --reporttitle Demo_UI_Regression_Report --outputdir %source%\Results\UI_Reports KeywordTestcases\Android\Android_Demo_Test_Suite.robot 

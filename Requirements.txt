@@ -2,10 +2,9 @@
 robotframework-ride==2.0b1
 robotframework
 robotframework-appiumlibrary
-robotframework-dependencylibrary
 robotframework-faker
 robotframework-metrics
-xlrd=1.2.0
+xlrd
 lxml
 allure-robotframework
 robotframework-pabot
